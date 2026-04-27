@@ -8,7 +8,7 @@ When a Grav form is submitted with the `brevo` process action, the plugin calls 
 
 The plugin is used on 360swim.com to power an AI swim coaching tool waitlist. See it in action at the bottom of this article:
 
-[Join the Waitlist — 360swim.com](https://360swim.com/blog/warm-down-your-way-to-recovery)
+[Join the Waitlist - 360swim.com](https://360swim.com/blog/warm-down-your-way-to-recovery)
 
 ## Requirements
 
@@ -73,7 +73,7 @@ form:
 
 ### Finding your list ID
 
-In Brevo, go to **Contacts → Lists**. Each list displays its ID number — use that number in the `lists` array. You can add a contact to multiple lists at once:
+In Brevo, go to **Contacts → Lists**. Each list displays its ID number - use that number in the `lists` array. You can add a contact to multiple lists at once:
 
 ```yaml
 lists: [3, 7]
@@ -108,19 +108,19 @@ On form submission, the plugin:
 3. POSTs to `https://api.brevo.com/v3/contacts` with your API key
 4. Logs errors to Grav's log if the API call fails
 
-The `updateEnabled` flag is set to `true` — if the contact already exists in Brevo, their attributes and list membership will be updated rather than returning an error.
+The `updateEnabled` flag is set to `true` - if the contact already exists in Brevo, their attributes and list membership will be updated rather than returning an error.
 
 ## Error handling
 
 Errors are logged to `logs/grav.log`. Check there if contacts are not appearing in Brevo after form submission.
 
 Common issues:
-- **API key not set** — check `user/config/plugins/brevo.yaml`
-- **List ID not found** — verify the list ID exists in your Brevo account under **Contacts → Lists**
-- **Attribute not found** — make sure the attribute is created in Brevo under **Contacts → Settings → Contact attributes** before using it in `field_mappings`
+- **API key not set** - check `user/config/plugins/brevo.yaml`
+- **List ID not found** - verify the list ID exists in your Brevo account under **Contacts → Lists**
+- **Attribute not found** - make sure the attribute is created in Brevo under **Contacts → Settings → Contact attributes** before using it in `field_mappings`
 ## License
 
-MIT — see [LICENSE](LICENSE)
+MIT - see [LICENSE](LICENSE)
 
 If you found this guide useful, why not let it be known by [sending me a few sats](https://360swim.com/ln-donate-github) or via LN address⚡swmtr@360swim.com .
 <br />
