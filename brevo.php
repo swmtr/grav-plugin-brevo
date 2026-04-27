@@ -109,6 +109,10 @@ class BrevoPlugin extends Plugin
 
         $result = $this->callBrevoApi($apiKey, $payload);
 
+        // Note: $form->status and $form->message are set here for forward compatibility.
+        // As of Grav Form plugin v9, these values are not included in the JSON response
+        // for custom process actions — the response is always {}. They may be used in
+        // future Form plugin versions or by xhr_submit: true implementations.
         if ($result === false) {
             $this->grav['log']->error('Brevo plugin: API call failed.');
             $form->status  = 'error';
