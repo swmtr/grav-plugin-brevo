@@ -5,7 +5,10 @@ The **Brevo** plugin adds [Brevo](https://www.brevo.com) (formerly Sendinblue) c
 When a Grav form is submitted with the `brevo` process action, the plugin calls the Brevo contacts API server-side to add the contact to the specified list(s) with any mapped attributes.
 
 ## Demo
-See the bottom of the article - [Join the Waitlist](https://360swim.com/blog/warm-down-your-way-to-recovery)
+
+The plugin is used on 360swim.com to power an AI swim coaching tool waitlist. See it in action at the bottom of this article:
+
+[Join the Waitlist — 360swim.com](https://360swim.com/blog/warm-down-your-way-to-recovery)
 
 ## Requirements
 
@@ -115,11 +118,6 @@ Common issues:
 - **API key not set** — check `user/config/plugins/brevo.yaml`
 - **List ID not found** — verify the list ID exists in your Brevo account under **Contacts → Lists**
 - **Attribute not found** — make sure the attribute is created in Brevo under **Contacts → Settings → Contact attributes** before using it in `field_mappings`
-
-## See it in action
-
-This plugin is used on [360swim.com](https://360swim.com) to power the AI swim coaching tool waitlist. You can see a live example of a Brevo subscription form embedded in a Grav blog post on any technique article at [360swim.com/blog](https://360swim.com/blog).
-
 ## License
 
 MIT — see [LICENSE](LICENSE)
