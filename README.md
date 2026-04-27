@@ -4,6 +4,9 @@ The **Brevo** plugin adds [Brevo](https://www.brevo.com) (formerly Sendinblue) c
 
 When a Grav form is submitted with the `brevo` process action, the plugin calls the Brevo contacts API server-side to add the contact to the specified list(s) with any mapped attributes.
 
+## Demo
+See the bottom of the article - [Join the Waitlist](https://360swim.com/blog/warm-down-your-way-to-recovery)
+
 ## Requirements
 
 - Grav 1.7+
