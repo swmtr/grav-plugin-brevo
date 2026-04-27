@@ -113,6 +113,16 @@ Common issues:
 - **List ID not found** — verify the list ID exists in your Brevo account under **Contacts → Lists**
 - **Attribute not found** — make sure the attribute is created in Brevo under **Contacts → Settings → Contact attributes** before using it in `field_mappings`
 
+## See it in action
+
+This plugin is used on [360swim.com](https://360swim.com) to power the AI swim coaching tool waitlist. You can see a live example of a Brevo subscription form embedded in a Grav blog post on any technique article at [360swim.com/blog](https://360swim.com/blog).
+
 ## License
 
 MIT — see [LICENSE](LICENSE)
+
+If you found this guide useful, why not let it be known by [sending me a few sats](https://360swim.com/ln-donate-github) or via LN address⚡swmtr@360swim.com .
+<br />
+<img src="https://360swim.com/user/themes/swimquark/images/ln_git.png" width="400" />
+ 
+Finally, if you are into swimming, checkout some [swimming tips](https://360swim.com/tips).
